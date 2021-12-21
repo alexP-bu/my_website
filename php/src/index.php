@@ -1,5 +1,7 @@
+<?php 
+include_once("header.php");
+?>
+
 <?php
-
-echo 'Hello from inside the docker container!';
-
+include_once("footer.php");
 ?>
