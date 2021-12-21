@@ -15,10 +15,10 @@
     <body>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Projects</li>
-                <li>Resume</li>
-                <li>Contact</li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="projects.php">Projects</a></li>
+                <li><a href="resume.php">Resume</a></li>
+                <li><a href="contact.php">Contact<a></li>
             <ul>    
         </nav>
     </body>
