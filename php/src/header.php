@@ -10,6 +10,8 @@
         <meta property="og:description" content="Just a guy that likes to code.">
         <meta property="site_name" content="Alexander Pozin">
         <link rel="stylesheet" href="./css/styles.css">
+        <!--fontawesome-->
+        <script src="https://kit.fontawesome.com/37712aa869.js" crossorigin="anonymous"></script>
         <!--google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,13 +21,34 @@
     
     <div class="page-container">
     <body>
-        <nav>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="projects.php">Projects</a></li>
-                <li><a href="resume.php">Resume</a></li>
-                <li><a href="contact.php">Contact<a></li>
-            <ul>    
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="navbar-item">
+                    <a href="index.php">
+                        <i class="fas fa-home"></i>
+                        <span class="link-text">Home</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="work.php">
+                        <i class="fas fa-laptop-code"></i>
+                        <span class="link-text">Work</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="about.php">
+                        <span class="link-text">About</span>
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="contact.php">
+                        <span class="link-text">Contact</span>
+                    </a>
+                </li>
+            </ul>    
         </nav>
+    
     </body>
+    </div>
 
+</html>
