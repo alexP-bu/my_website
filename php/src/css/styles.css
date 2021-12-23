@@ -61,25 +61,22 @@
     opacity: 1;
 }
 
-.navbar-item:first-child{
-    margin-left: -17.5%;
-}
-
 h1,h2,h3{
     position: relative;
 }
 
 h2,h3{
-    margin-top: 8%;
+    margin-top: 6%;
 }
 
 .content{
     width: 100vw;
-    height: 50vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;;
+    text-align: center;
+    justify-content: space-evenly;
 }
 
 .typed1{
@@ -102,11 +99,37 @@ h2,h3{
     overflow: hidden;
     white-space: nowrap;
     animation: typing 2.5s steps(50, end) forwards;
-    animation-delay: 3.5s;
+    animation-delay: 2.5s;
     width: 0;
 }
+
+
+.fa-arrow-down{
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 2s forwards 3s, bounce 1s linear infinite;
+}
+
 
 @keyframes typing{
     from {width: 0}
     to {width: 100%}
+}
+
+@keyframes bounce{
+    0%, 100%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 15px;
+    }
+}
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
