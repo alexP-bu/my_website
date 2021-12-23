@@ -1,12 +1,17 @@
 <?php 
 include_once("header.php");
 ?>
-<!--<h1>
+<div class="content">
+<h1 class="typed1">
     Hello, World!
 </h1>
-<h2>
-    My name is Alex.
-</h2>-->
+<h2 class="typed2">
+    My name is Alex. I'm a developer!
+</h2>
+<h3 class="typed3">
+    What would you like to see? 
+</h3>
+</div>
 <?php
 include_once("footer.php");
 ?>

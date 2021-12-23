@@ -25,30 +25,29 @@
             <ul class="navbar-nav">
                 <li class="navbar-item">
                     <a href="index.php">
-                        <i class="fas fa-home"></i>
+                        <i class="fas fa-home fa-2x"></i>
                         <span class="link-text">Home</span>
                     </a>
                 </li>
                 <li class="navbar-item">
                     <a href="work.php">
-                        <i class="fas fa-laptop-code"></i>
-                        <span class="link-text">Work</span>
+                        <i class="fas fa-laptop-code fa-2x"></i>
+                        <span class="link-text">My Work</span>
                     </a>
                 </li>
                 <li class="navbar-item">
                     <a href="about.php">
-                        <span class="link-text">About</span>
+                        <i class="fas fa-id-card fa-2x"></i>
+                        <span class="link-text">About Me</span>
                     </a>
                 </li>
                 <li class="navbar-item">
                     <a href="contact.php">
-                        <span class="link-text">Contact</span>
+                        <i class="fas fa-envelope-square fa-2x"></i>
+                        <span class="link-text">Contact Me</span>
                     </a>
                 </li>
             </ul>    
         </nav>
     
-    </body>
-    </div>
 
-</html>

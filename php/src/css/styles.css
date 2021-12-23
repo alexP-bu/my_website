@@ -8,10 +8,13 @@
     font-size: 16px;
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: white;
 }
 
 .page-container{
     height: 100vh;
+    padding-top: 5%;
     background-color: rgb(29, 29, 29);
 }
 
@@ -19,7 +22,7 @@
     position: fixed;
     bottom: 0;
     width: 100vw;
-    background-color: gray;
+    background-color: rgb(83, 83, 83);
 }
 
 .navbar-nav{
@@ -31,20 +34,79 @@
     list-style: none;
 }
 
-.navbar-item {
-    text-align: center;
+.navbar-item a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(25%);
+    transition: transform 0.5s ease-in-out;
 }
 
 .navbar-item > a:visited,a:link{
     color: white;
-    transition: color 0.8s;
     text-decoration: none;
 }
 
-.navbar-item > a:hover,a:active{
-    color:rgb(57, 219, 92);
+.link-text{
+    opacity: 0;
+    transition: opacity 0.75s linear;
 }
 
-.link-text{
-    
+.navbar-item > a:hover{
+    color:rgb(57, 219, 92);
+    transform: translateY(0);
+}
+
+.navbar-item > a:hover .link-text{
+    opacity: 1;
+}
+
+.navbar-item:first-child{
+    margin-left: -17.5%;
+}
+
+h1,h2,h3{
+    position: relative;
+}
+
+h2,h3{
+    margin-top: 8%;
+}
+
+.content{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;;
+}
+
+.typed1{
+    overflow: hidden;
+    margin-left: 0;
+    white-space: nowrap;
+    animation: typing 2s steps(50, end) forwards;
+    width: 0;
+}
+
+.typed2{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(50, end) forwards;
+    animation-delay: 1s;
+    width: 0;
+}
+
+.typed3{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2.5s steps(50, end) forwards;
+    animation-delay: 3.5s;
+    width: 0;
+}
+
+@keyframes typing{
+    from {width: 0}
+    to {width: 100%}
 }
