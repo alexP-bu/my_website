@@ -14,19 +14,19 @@
 
 .page-container{
     height: 100vh;
-    padding-top: 5%;
-    background-color: rgb(29, 29, 29);
+    width: 100vw;
 }
 
 .navbar{
+    height: 10vh;
+    width: 100%;
     position: fixed;
     bottom: 0;
-    width: 100vw;
     background-color: rgb(83, 83, 83);
 }
 
 .navbar-nav{
-    height: 10vh;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -61,6 +61,27 @@
     opacity: 1;
 }
 
+/*animation for navbar clicking*/
+
+.navbar-item{
+    flex-grow: 1;
+    transition: all 1000ms linear;
+}
+
+.removed{
+    flex-grow: 0;
+    width: 0;
+    font-size: 0;
+}
+
+.added{
+    flex-grow: 1;
+    width: 1;
+    font-size: 16px;
+}
+
+/*index page*/
+
 h1,h2,h3{
     position: relative;
 }
@@ -71,7 +92,13 @@ h2,h3{
 
 .content{
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
+    background-color: rgb(29, 29, 29);
+}
+
+.home-content{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,7 +117,7 @@ h2,h3{
 .typed2{
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 3s steps(50, end) forwards;
+    animation: typing 2.5s steps(50, end) forwards;
     animation-delay: 1s;
     width: 0;
 }
@@ -99,17 +126,33 @@ h2,h3{
     overflow: hidden;
     white-space: nowrap;
     animation: typing 2.5s steps(50, end) forwards;
-    animation-delay: 2.5s;
+    animation-delay: 3s;
     width: 0;
 }
-
 
 .fa-arrow-down{
     position: relative;
     opacity: 0;
-    animation: fadeIn 2s forwards 3s, bounce 1s linear infinite;
+    animation: fadeIn 2s forwards 4.5s, bounce 1s linear infinite;
 }
 
+.work-content{
+    height: 100%;
+    width: 100%;
+    border: 2px solid purple;
+}
+
+.about-content{
+    height: 100%;
+    width: 100%;
+    border: 2px solid yellow;
+}
+
+.contact-content{
+    height: 100%;
+    width: 100%;
+    border: 2px solid green;
+}
 
 @keyframes typing{
     from {width: 0}
@@ -133,3 +176,4 @@ h2,h3{
         opacity: 1;
     }
 }
+

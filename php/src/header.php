@@ -16,6 +16,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap" rel="stylesheet">
+        <!--jquery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     </head>
 
     
@@ -23,26 +25,26 @@
     <body>
         <nav class="navbar">
             <ul class="navbar-nav">
-                <li class="navbar-item">
-                    <a href="index.php">
+                <li class="navbar-item" id="home">
+                    <a>
                         <i class="fas fa-home fa-2x"></i>
                         <span class="link-text">Home</span>
                     </a>
                 </li>
-                <li class="navbar-item">
-                    <a href="work.php">
+                <li class="navbar-item" id="work">
+                    <a>
                         <i class="fas fa-laptop-code fa-2x"></i>
                         <span class="link-text">My Work</span>
                     </a>
                 </li>
-                <li class="navbar-item">
-                    <a href="about.php">
+                <li class="navbar-item" id="about">
+                    <a>
                         <i class="fas fa-id-card fa-2x"></i>
                         <span class="link-text">About Me</span>
                     </a>
                 </li>
-                <li class="navbar-item">
-                    <a href="contact.php">
+                <li class="navbar-item" id="contact">
+                    <a>
                         <i class="fas fa-envelope-square fa-2x"></i>
                         <span class="link-text">Contact Me</span>
                     </a>
