@@ -136,18 +136,76 @@ h2,h3{
     animation: fadeIn 2s forwards 4.5s, bounce 1s linear infinite;
 }
 
+/*work page content*/
+
 .work-content{
+    background-color: rgb(29, 29, 29);
     height: 100%;
     width: 100%;
-    border: 2px solid purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.work-center-icon{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(57, 219, 92);
+}
+
+.work-menu{
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-menu li{
+    height: auto;
+    width: auto;
+    left: -150px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    transition: all 0.75s;
+    transform-origin: 170px;
+    transform: rotate(calc(360deg / 5 * var(--i)));
+}
+
+.work-menu > li > i{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    padding: 6px;
+    transform: rotate(calc(360deg / -5 * var(--i)));
+}
+
+.work-menu > li > p{
+    transform: rotate(calc(360deg / -5 * var(--i)));
+    font-size: 12px;
+}
+
+.work-menu > li:hover{
+    color:rgb(57, 219, 92);
+    
+}
+
+/*about page content*/
 .about-content{
     height: 100%;
     width: 100%;
     border: 2px solid yellow;
 }
 
+/*contact page content*/
 .contact-content{
     height: 100%;
     width: 100%;

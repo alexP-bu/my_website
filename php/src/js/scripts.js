@@ -48,7 +48,7 @@ $(document).ready(function (){
     }
 
     function loadWorkContent(){
-        $(work).fadeIn();
+        $(work).fadeIn(1000);
         currentLoaded = work;
     }
 
