@@ -5,6 +5,8 @@ $(document).ready(function (){
     var about = document.getElementsByClassName('about-content');
     var contact = document.getElementsByClassName('contact-content');
 
+    $(work).hide();
+
     var currentLoaded = home;
 
     document.getElementById('home').classList.add('removed');
@@ -40,6 +42,8 @@ $(document).ready(function (){
     
     function unloadContent(){
         $(currentLoaded).fadeOut();
+        $(currentLoaded).hide();
+        console.log("unloaded!");
     }
 
     function loadHomeContent(){
@@ -48,11 +52,13 @@ $(document).ready(function (){
     }
 
     function loadWorkContent(){
-        $(work).fadeIn(1000);
+        console.log("entered");
+        $(work).fadeIn();
         currentLoaded = work;
+        
     }
 
-    function loadWorkContent(){
+    function loadAboutContent(){
         $(about).fadeIn();
         currentLoaded = about;
     }
