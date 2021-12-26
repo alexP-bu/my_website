@@ -141,64 +141,94 @@ h2,h3{
 .work-content{
     height: 100%;
     width: 100%;
+    border: 2px solid green;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .work-center-icon{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     color: rgb(57, 219, 92);
 }
 
 .work-menu{
-    list-style: none;
-    position: relative;
+    height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
 }
 
-.work-menu li{
-    height: auto;
-    width: auto;
-    left: -150px;
-    position: absolute;
+.work-menu-item{
+    border: 2px solid rgb(57, 219, 92);
+    width: 50%;
+    height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    color: white;
-    transition: all 0.75s;
-    transform-origin: 170px;
-    transform: rotate(calc(360deg / 5 * var(--i)));
+    justify-content: space-evenly;
 }
 
-.work-menu > li > i{
-    height: 65px;
-    width: 65px;
+.work-menu-item:hover{
+    background-color:rgb(66, 66, 66);
+}
+
+#web-dev > span{
+    display: none;
+}
+
+#sec-dev > .fa-unlock{
+    display: none;
+}
+
+#web-dev:hover > i{
+    z-index: 2;
+    animation: spider 2s ease-in-out infinite forwards;
+}
+
+#web-dev:hover > span{
+    top: 0;
+    display: block;
+    position: absolute;
+    transform: scaleY(2550%);
+}
+
+#sec-dev:hover > .fa-lock{
+    display:none;
+}
+
+#sec-dev:hover > .fa-unlock{
+    display:block;
+}
+
+#java-dev span{
+    display:none;
+}
+
+#java-dev:hover > span{
+    position: absolute;
+    display: block;
+    background: white;
+    border: 1px solid rgb(57, 219, 92);
+    width: 10px;
+    height: 25px;
+    top: 100px;
+    margin: 0 2px;
     border-radius: 50%;
-    padding: 6px;
-    transform: rotate(calc(360deg / -5 * var(--i)));
+    animation: vapour 2.5s linear infinite;
+    opacity: 0;
+    filter: blur(2.5px);
+    animation-delay: calc(var(--i) * -0.5s)
 }
 
-.work-menu > li > p{
-    transform: rotate(calc(360deg / -5 * var(--i)));
-    font-size: 12px;
-}
-
-.work-menu > li:hover{
-    color:rgb(57, 219, 92);
-    
+#func-dev:hover > i{
+    animation: rotate 1s linear infinite;
 }
 
 /*about page content*/
 .about-content{
+    display: none;
     height: 100%;
     width: 100%;
     border: 2px solid yellow;
@@ -206,6 +236,7 @@ h2,h3{
 
 /*contact page content*/
 .contact-content{
+    display: none;
     height: 100%;
     width: 100%;
     border: 2px solid green;
@@ -234,3 +265,51 @@ h2,h3{
     }
 }
 
+@keyframes spider{
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(75%);
+    }
+    50%{
+        transform: translateY(150%);
+    }
+    75%{
+        transform: translateY(75%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes vapour{
+    0%{
+        transform: translateY() scaleX(1);
+    }
+    15%{
+        opacity: 0.75;
+    }
+    50%{
+        transform: translateY(-10px) scaleX(2.5);
+
+    }
+    95%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-30px) scaleX(5);
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

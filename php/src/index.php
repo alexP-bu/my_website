@@ -14,29 +14,27 @@ include_once("header.php");
     <div class="work-content">
         <!--using work icon as central label-->
         <ul class="work-menu">
-            <div class="work-center-icon">
-                <i class="fas fa-laptop-code fa-3x"></i>
-                <p>My Work</p>
-            </div>
-            <li style="--i:0;">
-                <i class="fas fa-spider fa-2x"></i>
-                <p>Web</p>
+            <li class="work-menu-item" id="web-dev">
+                <span>|</span>
+                <i class="fas fa-spider fa-3x"></i>
+                <p>Web Development</p>
             </li>
-            <li style="--i:1;">
-                <i class="fab fa-java fa-2x"></i>
-                <p>Java</p>
+            <li class="work-menu-item" id="java-dev">
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+                <i class="fab fa-java fa-3x"></i>
+                <p>Java Development</p>
             </li>
-            <li style="--i:2;">
-                <i class="fas fa-cogs fa-2x"></i>
-                <p>Functional</p>
+            <li class="work-menu-item" id="func-dev">
+                <i class="fas fa-cog fa-3x"></i>
+                <p>Functional Programming</p>
             </li>
-            <li style="--i:3;">
-                <i class="fas fa-palette fa-2x"></i>
-                <p>Misc</p>
-            </li>
-            <li style="--i:4;">
-                <i class="fas fa-lock fa-2x"></i>
-                <p>Security</p>
+            <li class="work-menu-item" id="sec-dev">
+                <i class="fas fa-lock fa-3x"></i>
+                <i class="fas fa-unlock fa-3x"></i>
+                <p>Security Development</p>
             </li>
         </ul>
     </div>
