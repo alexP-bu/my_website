@@ -45,16 +45,18 @@ include_once("header.php");
     
     <div class="contact-content">
         <form>
-            <label for="first">First Name</label>
-            <input type="text" id="first" name="first-name">
-            <label for="last">Last Name</label>
-            <input type="text" id="last" name="last-name">
-            <label for="email">E-Mail</label>
+            <div class="names">
+                <label for="first">First Name:</label>
+                <input type="text" id="first" name="first-name">
+                <label for="last">Last Name:</label>
+                <input type="text" id="last" name="last-name">
+            </div>
+            <label for="email">E-Mail:</label>
             <input type="email" id="email" name="email-address">
-            <label for="subject">Subject</label>
+            <label for="subject">Subject:</label>
             <input type="text" id="subject" name="message-subject">
-            <label for="message">Message</label>
-            <input type="text" id="message" name="message-text">
+            <label for="message">Message:</label>
+            <textarea type="text" id="message" name="message-text"></textarea>
             <input type="Submit">
             <input type="reset">
         </form>

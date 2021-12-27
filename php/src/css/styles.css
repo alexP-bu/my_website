@@ -243,10 +243,40 @@ h2,h3{
 
 form{
     height: 50%;
-    width: 25%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+}
+
+.names{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.names > label,input{
+    padding: 5px;
+}
+
+#email{
+    width: 50%;
+}
+
+#subject{
+    width: 50%;
+}
+
+form > textarea{
+    width: 50%;
+    height: 15%;
+    padding: 5px;
+}
+
+form > input{
+    padding: 5px;
 }
 
 @keyframes typing{
