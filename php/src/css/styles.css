@@ -242,8 +242,8 @@ h2,h3{
 }
 
 form{
-    height: 50%;
-    width: 75%;
+    height: 30rem;
+    width: 35rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -258,25 +258,47 @@ form{
 }
 
 .names > label,input{
-    padding: 5px;
+    margin: 0.25rem;
+    padding: 0.25rem;
 }
 
 #email{
-    width: 50%;
+    width: 25rem;
 }
 
 #subject{
-    width: 50%;
+    width: 25rem;
 }
 
 form > textarea{
-    width: 50%;
-    height: 15%;
-    padding: 5px;
+    width: 25rem;
+    height: 5rem;
+    padding: 1rem;
 }
 
 form > input{
-    padding: 5px;
+    padding: 0.5rem;
+}
+
+.input{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.input input{
+    height: 2.5rem;
+    width: 50%;
+    background-color: rgb(83, 83, 83);
+    outline: none;
+    border: 2px solid rgb(57, 219, 92);
+    font-family: inherit;
+    font-weight: bold;
+    font-size: inherit;
+}
+
+.input input:hover{
+    background-color: rgb(117, 117, 117);
 }
 
 @keyframes typing{

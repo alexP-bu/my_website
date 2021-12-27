@@ -57,8 +57,10 @@ include_once("header.php");
             <input type="text" id="subject" name="message-subject">
             <label for="message">Message:</label>
             <textarea type="text" id="message" name="message-text"></textarea>
-            <input type="Submit">
-            <input type="reset">
+            <div class="input">
+                <input type="Submit">
+                <input type="reset">
+            </div>
         </form>
     </div>
 </div>
