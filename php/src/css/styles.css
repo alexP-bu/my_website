@@ -229,7 +229,6 @@ h2,h3{
 .about-content{
     height: 100%;
     width: 100%;
-    border: 2px solid yellow;
 }
 
 /*contact page content*/
@@ -295,6 +294,7 @@ form > input{
     font-family: inherit;
     font-weight: bold;
     font-size: inherit;
+    color: white;
 }
 
 .input input:hover{
