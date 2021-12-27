@@ -6,6 +6,8 @@ $(document).ready(function (){
     var contact = document.getElementsByClassName('contact-content');
 
     $(work).hide();
+    $(about).hide();
+    $(contact).hide();
 
     var currentLoaded = home;
 
@@ -52,10 +54,8 @@ $(document).ready(function (){
     }
 
     function loadWorkContent(){
-        console.log("entered");
         $(work).fadeIn();
         currentLoaded = work;
-        
     }
 
     function loadAboutContent(){

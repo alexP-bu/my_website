@@ -44,7 +44,20 @@ include_once("header.php");
     </div>
     
     <div class="contact-content">
-
+        <form>
+            <label for="first">First Name</label>
+            <input type="text" id="first" name="first-name">
+            <label for="last">Last Name</label>
+            <input type="text" id="last" name="last-name">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email-address">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="message-subject">
+            <label for="message">Message</label>
+            <input type="text" id="message" name="message-text">
+            <input type="Submit">
+            <input type="reset">
+        </form>
     </div>
 </div>
 <?php

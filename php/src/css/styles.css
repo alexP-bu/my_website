@@ -141,7 +141,6 @@ h2,h3{
 .work-content{
     height: 100%;
     width: 100%;
-    border: 2px solid green;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,7 +227,6 @@ h2,h3{
 
 /*about page content*/
 .about-content{
-    display: none;
     height: 100%;
     width: 100%;
     border: 2px solid yellow;
@@ -236,10 +234,19 @@ h2,h3{
 
 /*contact page content*/
 .contact-content{
-    display: none;
     height: 100%;
     width: 100%;
-    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    height: 50%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 @keyframes typing{
