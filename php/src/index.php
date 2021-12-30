@@ -29,7 +29,7 @@ include_once("header.php");
             </li>
             <li class="work-menu-item" id="func-dev">
                 <i class="fas fa-cog fa-3x"></i>
-                <p>Functional Programming</p>
+                <p>Programming Projects</p>
             </li>
             <li class="work-menu-item" id="sec-dev">
                 <i class="fas fa-lock fa-3x"></i>
@@ -40,7 +40,7 @@ include_once("header.php");
     </div>
     
     <div class="about-content">
-
+    
     </div>
     
     <div class="contact-content">
