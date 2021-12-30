@@ -1,14 +1,14 @@
 <?php
 //phpmailer import
-require "./assets/PHPMailer/src/PHPMailer.php";
-require "./assets/PHPMailer/src/Exception.php";
-require "./assets/PHPMailer/src/SMTP.php";
+require './assets/PHPMailer/src/PHPMailer.php';
+require './assets/PHPMailer/src/Exception.php';
+require './assets/PHPMailer/src/SMTP.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-$output_to_email = "apozin@bu.edu";
+$output_to_email = 'apozin@bu.edu';
 
-if($_SERVER['REQUEST_METHOD'] == "POST"){
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $first_name = $_POST['first-name']; 
     $last_name = $_POST['last-name'];
     $email = $_POST['email-address'];
@@ -40,7 +40,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         header($location_path_success);
         exit();
     } catch (Exception $e) {
-        echo "Message could not be sent. Please contact apozin@bu.edu with error. Mailer Error: {$mail->ErrorInfo}";
+        echo 'Message could not be sent. Please contact apozin@bu.edu with error. Mailer Error: {$mail->ErrorInfo}';
     }
 }
 
