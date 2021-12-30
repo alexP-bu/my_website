@@ -79,7 +79,7 @@ include_once("header.php");
             <label for="message">Message:</label>
             <textarea type="text" id="message" name="message-text"></textarea>
             <div class="input">
-                <input type="Submit">
+                <input type="Submit" method="POST" action="./contact_form.inc.php">
                 <input type="reset">
             </div>
         </form>
