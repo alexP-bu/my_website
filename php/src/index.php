@@ -40,7 +40,13 @@ include_once("header.php");
     </div>
     
     <div class="about-content">
-    
+        <img src="./img/alex_photo.jpg" alt="Photo of Alex">
+        <p>My name is Alexander Pozin!</p>
+        <p>I'm current a senior at Boston University studying computer science.</p>
+        <p>I love programming!</p>
+        <p>Most of all, I enjoy learning new ways to code and solve problems. 
+        <p>Right now, I'm studying cyber security and cryptography!</p>
+        <a href="./assets/resume.docx">Download my resume!</a>
     </div>
     
     <div class="contact-content">
