@@ -65,6 +65,8 @@ include_once("header.php");
     </div>
     
     <div class="contact-content">
+        <p>Contact me using the form below!</p>
+        <p>*All fields are required</p>
         <form>
             <div class="names">
                 <label for="first">First Name:</label>
