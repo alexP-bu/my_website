@@ -229,9 +229,42 @@ h2,h3{
 .about-content{
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
+.about-content img{
+    margin-bottom: 2%;
+}
 
+.about-content > p{
+    margin-bottom: 3%;
+}
+
+.about-content ul{
+    list-style: none;
+}
+
+.about-content li{
+    display: flex;
+}
+
+.about-content i{
+    margin-right: 3px;
+}
+
+.about-content p{
+    margin: 3px;
+    text-align: left;
+}
+
+.about-content a{
+    margin-top: 3%;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
 
 /*contact page content*/
 .contact-content{
