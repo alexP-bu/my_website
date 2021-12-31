@@ -1,13 +1,14 @@
 $(document).ready(function (){
     var buttons = $('.navbar-item');
+    var home = document.getElementsByClassName('home-content');
     //hide unloaded content
-    $(work).hide();
-    $(about).hide();
-    $(contact).hide();
-    //set home to loaded
+    $('.work-content').hide();
+    $('.about-content').hide();
+    $('.contact-content').hide();
+    //set home to current loaded page
     var currentLoaded = home;
     document.getElementById('home').classList.add('removed');
-    //function to change pages on click
+    //function which switches between pages
     buttons.on('click', function (evt) {
         //animation for navbar
         $(buttons).each(function(index){
@@ -19,12 +20,12 @@ $(document).ready(function (){
         //load new content
         loadContent(document.getElementsByClassName(this.id + '-content'));
     });
-    //unload webpage content
+    //function to unload page
     function unloadContent(){
         $(currentLoaded).fadeOut();
         $(currentLoaded).hide();
     }
-    //load page
+    //function to load page
     function loadContent(item){
         $(item).fadeIn();
         currentLoaded = item;
